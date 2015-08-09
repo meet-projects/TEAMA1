@@ -1,9 +1,16 @@
 <html>
+
 <head>
-<h1>Register</h1>
-<p> get ready to think different.....</p>
+<!-- <link rel="stylesheet"type="text/css"href="{{ url_for('static', 'register.css') }}"> -->
+<link rel="stylesheet"type="text/css"href="../static/register.css">
 <title>break the barriers!!</title>
 </head>
+<body >
+<center>
+<h1>Register</h1>
+<img src="happy_world.jpg",  style="width:304px;height:228px;">
+<p id="slogan"> get ready to think different.....</p>
+
 first name<br>
 <input type="text" name="first name">
 <br>
@@ -12,9 +19,13 @@ last name
 <input type="text" name="last name">
 <br>
 <h3>  choose your gender : </h3>
-<input type="radio" name="male">male <br>
-<input type="radio" name="female">female  <br>
-<input type="radio" name="other">other <br>
+<input type="radio" name="gender"value="male">male <br>
+<input type="radio" name="gender"value="female">female  <br>
+<input type="radio" name="gender" value="other">other <br>
+<br>
+email
+<input type="text" name="email">
+
 
 <h3>  break your stereotype : </h3>
  <select>
@@ -22,7 +33,9 @@ last name
 <option value="women can fight">women can fight</option>
 <option value="men can cook">men can cook</option>
 <option value="old men drive fast">old men drive fast</option>
-<option value="an inteligent blonde">an inteligent blonde</option>
+<option value="kids are responsibile">kids are responsibile</option>
+<option value="friendship has no color">friendship has no color</option>
+
 </select> 
 <br>
 <br>
@@ -109,9 +122,11 @@ last name
 <br>
 <br>
 
- <input type="submit" value="Submit">
-
-
+<input type="submit" value="Submit">
+<input type="submit" value="cancel">
+</center>
+</body >
+</html>
 
 
 
