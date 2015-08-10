@@ -1,6 +1,7 @@
-from flask import Flask, render_template,request,url_for,redirect
+from flask import Flask, render_template, request, url_for, redirect
 app = Flask(__name__)
 
+import datetime
 # SQLAlchemy stuff
 from database_setup import Base,User,Photos
 from sqlalchemy import create_engine
@@ -15,6 +16,10 @@ session = DBSession()
 @app.route('/')
 def gotofrontpage():
     return render_template('front_page.html')
+
+@app.route('/register')
+def gotoregister():
+    return render_template('register.html')
 
 @app.route('/main')
 def mainpage():		
@@ -36,7 +41,12 @@ def registration():
 		email=request.form["email"]
 		gender=request.form["gender"]
 		status=request.form["stereotype"]
-		age=request.form["year","month","day"]
+		age = datetime.datetime(int(request.form["year"]), int(request.form["month"]), int(request.form["day"]))
+		newuser=User(first_name=firstname,last_name=lastname,gender=gender,email=email,status=status,birthdate=age)
+		session.add(newuser)
+		session.commit()
+		return redirect(url_for("mainpage"))
+		
 		
 
 

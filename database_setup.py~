@@ -5,20 +5,20 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-class user(Base):
-	_tablename_='user'
-	id=column(Integer,primary_key=True)
-	first_name=column(String(30))
-	last_name=column(string)
-	gender=column(String(10))
-	email=column(String(60))
-	status=column(String(60))
-	birthdate=column(Date(60))
+class User(Base):
+	__tablename__='user'
+	id=Column(Integer,primary_key=True)
+	first_name=Column(String(30))
+	last_name=Column(String)
+	gender=Column(String(10))
+	email=Column(String(60))
+	status=Column(String(60))
+	birthdate=Column(Date)
 
-class photos(Base):
-	_tablename_='photos'
-	id=column(Integer,primary_key=True)
-	name=column(String(60))
-	approval=column(Boolean)
+class Photos(Base):
+	__tablename__='photos'
+	id=Column(Integer,primary_key=True)
+	name=Column(String(60))
+	approval=Column(Boolean)
 
 
