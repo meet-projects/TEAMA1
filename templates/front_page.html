@@ -2,15 +2,17 @@
 <html>
 <head>
 
+<link rel="stylesheet" type = "text/css" href = "front_page.css">
+
 <h1> MEET the world !</h1>
 
-<h4> #Stereotype Breakers </h4>
+<h2> #Stereotype Breakers </h2>
 
 <title> MEET the world  </title>
 
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
   
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='front_page.css') }}">
 
   
 </head>
@@ -19,33 +21,59 @@
 <input type="submit" value="Sign In" >
 
 <input type="submit" value="Sign Up" >
-<br>
+
+<p>
+<span id="H">H</span> <span id="l">ello,</span>
+<span id="p"> We as MEET year 2 students, we are trying to change the world and to make difference.Difference could start with anti-racism, anti-sexism; as well as, stereotype breaking.For example, Blondes can get high degrees and David can invite Mohammad to his house.
+Our team believes that changing the world should start with us because children should make the change by knowledge and not by fighting and conflicts.
+We strongly believes that colors, genders, nationalities, religions and ages don't and will never be an obstacle to meet new people.<br>
+
+Get Ready To Make Difference..........<br>
+Team A1 is the best !</span>  </p>
+
 <br>
 <br>
 
-<div class = "Black and White">
-<img class = "people_image" src = "BLACKANDWHITEPEOPLE.jpg" alt = "picture of black and white people"  height="300" width="400">
-<h4>#Friendships have no colors!</h4>
-
-<div class = "Religions">
-<img class = "people_image" src = "religions.jpg" alt = "picture of Religions"  height="300" width="400">
-<h4>#I don't care what's his religion.He's still my friend!</h4>
+<div id="wrapper">
+  <div id="content">
+<!--one column stats -->
+<div class = "BLACKANDWHITEPEOPLE">
+<img class = "people_image" src = "../static/BLACKANDWHITEPEOPLE.jpg" alt = "picture of black and white people"  height="300" width="400">
+<h4>#Friendships have no colors!</h4> </div>
 
 <div class = "Nationality">
-<img class = "people_image" src = "palestineandisrael.jpg" alt = "picture of peace"  height="300" width="400">
-<h4>#We still live in the same state!</h4>
-
-<div class = "rainbow">
-<img class = "people_image" src = "GAYS.jpg" alt = "picture of rainbow flag"  height="300" width="400">
-<h4>#We can accept each other <3 !</h4>
+<img class = "people_image" src = "../static/palestineandisrael.jpg" alt = "picture of peace"  height="300" width="400">
+<h4>#We still live in the same state!</h4> </div>
 
 <div class = "genders">
-<img class = "people_image" src = "genders.jpg" alt = "picture of genders"  height="300" width="400">
-<h4>#Meet the opposet gender !</h4>
+<img class = "people_image" src = "../static/genders.jpg" alt = "picture of genders"  height="300" width="400">
+<h4>#Meet the opposet gender !</h4> </div>
+
+</div>
+
+<!--another column stats -->
+<div id="sidebar">
+
+<div class = "Religions">
+<img class = "people_image" src = "../static/religions.jpg" alt = "picture of Religions"  height="300" width="400">
+<h4>#I don't care what's his religion.He's still my friend!</h4> </div>
 
 
 
+<div class = "rainbow">
+<img class = "people_image" src = "../static/GAYS.jpg" alt = "picture of rainbow flag"  height="300" width="400">
+<h4>#We can accept each other <3 !</h4> </div>
 
+
+
+<div class = "ages">
+<img class = "people_image" src = "../static/ages.jpg" alt = "picture of ages"  height="300" width="400">
+<h4>#Ages won't be an obstacle !</h4> </div>
+
+
+</div>
+  <div id="cleared"></div>
+</div>
 
 
 		
