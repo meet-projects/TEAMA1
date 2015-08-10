@@ -19,8 +19,6 @@
 <br>
 <body>
 <a href="{{ url_for('gotoregister')}}">sign up</a>
-<br>
-
 <a href="{{ url_for('mainpage')}}">Goooo in....</a>
 
 <p>

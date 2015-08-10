@@ -11,13 +11,13 @@
 <h1>Register</h1>
 <img src="{{ url_for('static', filename='united_people.jpg') }}",  style="width:304px;height:228px;">
 <p id="slogan"> get ready to think different.....</p>
-<form action="submit">
+<form action="{{url_for('registration')}}" method="POST">
 first name<br>
-<input type="text" name="first name">
+<input type="text" name="firstname">
 <br>
 last name
 <br>
-<input type="text" name="last name">
+<input type="text" name="lastname">
 <br>
 <h3>  choose your gender : </h3>
 <input type="radio" name="gender"value="male">male <br>
@@ -64,18 +64,18 @@ email
 <p>month of birth</p>
  <select name="month">
 
-<option value="January">January</option>
-<option value="Fabuary">Febuary</option>
-<option value="March">March</option>
-<option value="April">April</option>
-<option value="May">May</option>
-<option value="June">June</option>
-<option value="July">July</option>
-<option value="august">August</option>
-<option value="September">September</option>
-<option value="October">October</option>
-<option value="November">November</option>
-<option value="December">December</option>
+<option value="1">January</option>
+<option value="2">Febuary</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
 
 </select> 
 
