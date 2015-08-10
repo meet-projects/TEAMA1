@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-class User(Base):
+class user(Base):
 	_tablename_='user'
 	id=column(Integer,primary_key=True)
 	first_name=column(String(30))
@@ -15,7 +15,7 @@ class User(Base):
 	status=column(String(60))
 	birthdate=column(Date(60))
 
-class Photos(Base):
+class photos(Base):
 	_tablename_='photos'
 	id=column(Integer,primary_key=True)
 	name=column(String(60))

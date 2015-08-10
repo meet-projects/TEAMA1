@@ -1,14 +1,14 @@
-from flask import Flask, render_template,request,url_for,redirect
+from flask import Flask, render_template
 app = Flask(__name__)
 
 # SQLAlchemy stuff
-from database_setup import Base Person <--- Import your tables here!!
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-engine = create_engine('sqlite:///crudlab.db')
-Base.metadata.create_all(engine)
-DBSession = sessionmaker(bind=engine)
-session = DBSession()
+#from database_setup import Base Person <--- Import your tables here!!
+#from sqlalchemy import create_engine
+#from sqlalchemy.orm import sessionmaker
+#engine = create_engine('sqlite:///crudlab.db')
+#Base.metadata.bind = engine
+#DBSession = sessionmaker(bind=engine)
+#session = DBSession()
 
 
 #YOUR WEB APP CODE GOES HERE
@@ -16,9 +16,7 @@ session = DBSession()
 def gotofrontpage():
     return render_template('front_page.html')
 
-@app.route('/main')
-def mainpage():		
-    	return render_template('main_page.html')
+
 
 @app.route('/newuser')
 def sumbit():
@@ -36,7 +34,7 @@ def registration():
 		email=request.form["email"]
 		gender=request.form["gender"]
 		status=request.form["stereotype"]
-		age=request.form["year","month","day"]
+		#age=request.form["year","month","day"]
 		
 
 
