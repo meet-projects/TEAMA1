@@ -1,0 +1,81 @@
+body {
+	font-family: "Helvetica";
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+	/*color: rgb(173,64,200);*/
+}
+
+#h {
+	text-align: center;
+	font-style: italic;
+}
+#H{ font-size: 100px;
+}
+
+#p{ font-size: 30px;
+text-align: center;
+}
+
+#l{ font-size: 30px;
+}
+ 
+. {
+	float: right;
+	padding: 10px;
+	margin: 0px;
+	width: 25%;
+	height: 80%;
+	position: relative;
+	top: 10px;
+	left: 50px;
+	
+}
+
+.{
+	float: right;
+	padding: 10px;
+	margin: 0px;
+	width: 25%;
+	height: 80%;
+	position: relative;
+	top: 10px;
+	left: 50px;
+	
+}
+
+.{
+	float: right;
+	padding: 10px;
+	margin: 0px;
+	width: 25%;
+	height: 80%;
+	position: relative;
+	top: 10px;
+	left: 50px;
+	
+}
+
+
+#wrapper {
+  margin-right: -500px;
+}
+#content {
+  float: left;
+  width: 50%;
+ 
+}
+#sidebar {
+  float: right;
+  width: 50%;
+  
+}
+#cleared {
+  clear: both;
+}
+
+
