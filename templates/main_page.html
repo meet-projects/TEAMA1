@@ -4,6 +4,7 @@
   <title>
 	MEET the world
   </title>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main-page.css')}} ">
   <link rel=stylesheet type=text/css href="../static/main-page.css">
 
   <form method="get" action="{{url_for('gotofrontpage')}}">
@@ -15,44 +16,47 @@
 <h2 id="Title">One photo equals thousand words</h2>
 
 <!-- photos -->
-<div class="photobox"><img  class= "image" src="palastinian_and_israeli.jpg">
+<div class="photobox"><img  class= "image" src="{{url_for('static', filename='palastinian_and_israeli.jpg')}}">
 <h4>Israeli and Palestinian can be friends</h4>
 <button type="button" >Agree</button>
 </div>
 
-<div class="photobox"><img id ="blackandwhite" class= "image" src="blackandwhite.jpg">
+<div class="photobox"><img id ="blackandwhite" class= "image" src="{{url_for('static', filename='blackandwhite.jpg')}}">
 <h4>We are all equal</h4>
 <button type="button" >Agree</button></div>
 
 
-<div class="photobox"><img id ="dancer" class= "image" src="dancer.jpg">
+<div class="photobox"><img id ="dancer" class= "image" src="{{url_for('static', filename='dancer.jpg')}}">
 <h4>Dance is for everyone</h4>
 <button type="button" >Agree</button></div>
 
-<div class="photobox"><img id ="differnt_nationality" class= "image" src="differnt_nationality.jpg">
+<div class="photobox"><img id ="differnt_nationality" class= "image" src="{{url_for('static', filename='differnt_nationality.jpg')}}">
 <h4>Diffrent Nationality Same Human</h4>
 <button type="button" >Agree</button></div>
 
-<div class="photobox"><img id ="gay" class= "image" src="gay.jpeg">
+<div class="photobox"><img id ="gay" class= "image" src="{{url_for('static', filename='gay.jpg')}}">
 <h4>Respect The other</h4>
 <button type="button" >Agree</button></div>
 
-<div class="photobox"><img id ="girl_driver" class= "image" src="girl_driver.jpg">
+<div class="photobox"><img id ="girl_driver" class= "image" src="{{url_for('static', filename='girl_driver.jpg')}}">
 <h4>Great Driver</h4>
 <button type="button" >Agree</button></div>
 
-<div class="photobox"><img id ="religion" class= "image" src="religion.jpg">
+<div class="photobox"><img id ="religion" class= "image" src="{{url_for('static', filename='religion.jpg')}}">
 <h4>Just Believe</h4>
 <button type="button" >Agree</button></div>
 
-<div class="photobox"><img id ="smartblonde" class= "image" src="smartblonde.jpg">
+<div class="photobox"><img id ="smartblonde" class= "image" src="{{url_for('static', filename='smartblonde.jpg')}}">
 <h4>Amma Just Finished her Degree</h4>
 <button type="button" >Agree</button></div>
 
-<div class="photobox"><img id ="strong_girl" class= "image" src="strong_girl.jpeg">
+<div class="photobox"><img id ="strong_girl" class= "image" src="{{url_for('static', filename='strong_girl.jpg')}}">
 <h4>Girls Power</h4>
 <button type="button" >Agree</button></div>
 
+<div class="photobox"><img id ="oldmen" class= "image" src="{{url_for('static', filename='oldmen.jpg')}}">
+<h4>Olds= experience drivers</h4>
+<button type="button" >Agree</button></div>
 
 
 
