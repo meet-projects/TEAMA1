@@ -5,5 +5,20 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-#PLACE YOUR TABLE SETUP INFORMATION HERE
+class user(Base):
+	_tablename_='user'
+	id=column(Integer,primary_key=True)
+	first_name=column(String(30))
+	last_name=column(string)
+	gender=column(String(10))
+	email=column(String(60))
+	status=column(String(60))
+	birthdate=column(Date(60))
+
+class photos(Base):
+	_tablename_='photos'
+	id=column(Integer,primary_key=True)
+	name=column(String(60))
+	approval=column(Boolean)
+
 

@@ -13,8 +13,30 @@ app = Flask(__name__)
 
 #YOUR WEB APP CODE GOES HERE
 @app.route('/')
-def main():
-    return render_template('main_page.html')
+def gotofrontpage():
+    return render_template('front_page.html')
+
+
+
+@app.route('/newuser')
+def sumbit():
+		
+    	return render_template('main_page.html')
+
+
+@app.route('/register', methods=['GET', 'POST'])
+def registration():
+	if request.method == 'GET':
+		return render_template('register.html')
+	else:
+		firstname= request.form["firstname"]
+		lastname= request.form["lastname"]
+		email=request.form["email"]
+		gender=request.form["gender"]
+		status=request.form["stereotype"]
+		#age=request.form["year","month","day"]
+		
+
 
 
 
