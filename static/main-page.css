@@ -1,6 +1,26 @@
-#israel_and_palestinian{
-width:700px ;
-height:700px;
-margin-left:50px;
+
+h4 {
+font-family:"Verdana, Geneva, sans-serif"
+}
+
+.photobox {
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.image {
+width: 500px;
+height: 500px;
+}
+
+#title {
+text-align: center ;
+}
+
+#Title {
+text-align: center ;
 }
 
