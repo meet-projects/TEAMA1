@@ -14,11 +14,15 @@ class User(Base):
 	email=Column(String(60))
 	status=Column(String(60))
 	birthdate=Column(Date)
+	
 
 class Photos(Base):
 	__tablename__='photos'
 	id=Column(Integer,primary_key=True)
 	name=Column(String(60))
 	approval=Column(Boolean)
+	agrees=Column(Integer)
+
+
 
 

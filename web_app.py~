@@ -17,7 +17,7 @@ session = DBSession()
 def gotofrontpage():
     return render_template('front_page.html')
 
-@app.route('/')
+@app.route('/register')
 def gotoregister():
     return render_template('register.html')
 
@@ -50,7 +50,7 @@ def registration():
 		
 
 
-
+pic1= Photos(name="blackandwhite.jpg", approval=True, agrees=0)
 
 
 
