@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask , render_template , request , url_for , redirect
 app = Flask(__name__)
 
 import datetime
@@ -20,6 +20,8 @@ def gotofrontpage():
 @app.route('/register')
 def gotoregister():
     return render_template('register.html')
+
+
 
 @app.route('/main')
 def mainpage():		

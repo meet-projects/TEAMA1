@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask , render_template , request , url_for , redirect
 app = Flask(__name__)
 
 import datetime
@@ -17,9 +17,13 @@ session = DBSession()
 def gotofrontpage():
     return render_template('front_page.html')
 
-@app.route('/')
+@app.route('/register')
 def gotoregister():
     return render_template('register.html')
+
+@app.route('/signin')
+def gotosignin():
+    return render_template('signin.html')
 
 @app.route('/main')
 def mainpage():		
