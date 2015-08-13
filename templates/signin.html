@@ -4,6 +4,7 @@
 <head>
 
 
+
 <title> sign in for cool things!!</title>
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signin.css') }}">
@@ -13,10 +14,13 @@
 <body>
 <center>
 
+
+
 <br> <br> <br>
 <h1>sign in</h1>
 <br>
 first name
+<form action="{{url_for('gotosignin')}}" method="POST">
 <input type="text" name="firstname">
 <br> <br> <br>
 last name
@@ -24,15 +28,9 @@ last name
 <br>
 
 <br>
-<button onclick="myfunction()">enter</button>
-<script>
-function myfunction(){
-if (firstname==first_name && lastname==last_name) 
 
-	{<a href="{{ url_for('mainpage')}}">ENTER:)</a>;}
-	else {print("user name or password wrong");}
-
-</script>
+<input type="submit" value="Submit">
+</form>
 
 
 
