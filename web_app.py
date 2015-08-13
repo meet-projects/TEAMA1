@@ -22,6 +22,10 @@ def gotoregister():
     return render_template('register.html')
 
 
+@app.route('/signin')
+def gotosignin():
+    return render_template('signin.html')
+
 
 @app.route('/main')
 def mainpage():		

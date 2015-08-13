@@ -14,12 +14,18 @@
   
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='front_page.css') }}">
 
+
+<div class = "logo">
+<img class = "logo_image" src = "../static/logo.jpg" alt = "picture of logo"  height="50" width="70">
+</div>
   
 </head>
 <br>
 <body>
-<a href="{{ url_for('gotoregister')}}">sign up</a>
-<a href="{{ url_for('mainpage')}}">Goooo in....</a>
+<a href="{{ url_for('gotoregister')}}">Sign up</a>
+<br>
+
+<a href="{{ url_for('gotosignin')}}">Sign in....</a>
 
 <p>
 <span id="H">H</span> <span id="l">ello,</span>
