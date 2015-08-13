@@ -22,7 +22,7 @@ class Photos(Base):
 	name=Column(String(60))
 	approval=Column(Boolean)
 	agrees=Column(Integer)
-
+	status = Column(String)
 
 
 

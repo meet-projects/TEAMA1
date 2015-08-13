@@ -30,7 +30,7 @@ def gotosignin():
 @app.route('/main')
 def mainpage():	
 		photoslist=session.query(Photos).all()	
-    	return render_template('main_page.html', photos=photoslist)
+		return render_template('main_page.html', photos=photoslist)
 
 @app.route('/newuser')
 def sumbit():
