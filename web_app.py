@@ -28,13 +28,15 @@ def gotosignin():
 
 
 @app.route('/main')
-def mainpage():		
-    	return render_template('main_page.html')
+def mainpage():	
+		photoslist=session.query(Photos).all()	
+    	return render_template('main_page.html', photos=photoslist)
 
 @app.route('/newuser')
 def sumbit():
 		
     	return render_template('main_page.html')
+
 
 
 @app.route('/register', methods=['GET', 'POST'])

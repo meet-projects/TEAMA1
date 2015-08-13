@@ -5,7 +5,7 @@
 	MEET the world
   </title>
   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main-page.css')}} ">
-  <link rel=stylesheet type=text/css href="../static/main-page.css">
+  <!--<link rel=stylesheet type=text/css href="../static/main-page.css">-->
 
   <form method="get" action="{{url_for('gotofrontpage')}}">
     <button type="submit">About Us</button>
@@ -15,10 +15,30 @@
   <h1 id="title">Breaking Stereotypes</h1>
 <h2 id="Title">One photo equals thousand words</h2>
 
+
+
+
+
+<!--{% for photo in photos %}
+
+
+<div class="photobox">
+	<img  class= "image" src="{{url_for('static', filename='photo.name')}}">
+	<h4>Israeli and Palestinian can be friends</h4>
+	<button type="button" >Agree</button>
+</div>
+
+
+{%endfor%}-->
+
+
+
+
+
 <!-- photos -->
 <div class="photobox"><img  class= "image" src="{{url_for('static', filename='palastinian_and_israeli.jpg')}}">
 <h4>Israeli and Palestinian can be friends</h4>
-<button type="button" >Agree</button>
+<in type="button" >Agree</button>
 </div>
 
 <div class="photobox"><img id ="blackandwhite" class= "image" src="{{url_for('static', filename='blackandwhite.jpg')}}">

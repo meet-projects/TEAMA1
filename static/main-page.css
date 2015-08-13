@@ -26,5 +26,9 @@ text-align: center ;
 
 
 body {
-    background-color: #b0c4de;
+    background-image: url('wood2.jpeg');
+    -webkit-background-size: cover;	
+    -moz-background-size: cover;
+    -o-background-size: cover;	
+    background-size: cover;
 } 
