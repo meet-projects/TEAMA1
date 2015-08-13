@@ -6,6 +6,8 @@
 
 <h1> MEET the world !</h1>
 
+
+
 <h2> #Stereotype Breakers </h2>
 
 <title> MEET the world  </title>
@@ -14,10 +16,10 @@
   
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='front_page.css') }}">
 
-
 <div class = "logo">
-<img class = "logo_image" src = "../static/logo.jpg" alt = "picture of logo"  height="50" width="70">
+<img class = "logo_image" src = "../static/logo.jpg" alt = "picture of logo"  height="170" width="170">
 </div>
+
   
 </head>
 <br>
@@ -25,7 +27,7 @@
 <a href="{{ url_for('gotoregister')}}">Sign up</a>
 <br>
 
-<a href="{{ url_for('gotosignin')}}">Sign in....</a>
+<a href="{{ url_for('gotosignin')}}">Sign in</a>
 
 <p>
 <span id="H">H</span> <span id="l">ello,</span>
@@ -66,7 +68,7 @@ Team A1 is the best !</span>  </p>
 
 
 <div class = "rainbow">
-<img class = "people_image" src = "../static/GAYS.jpg" alt = "picture of rainbow flag"  height="300" width="400">
+<img class = "people_image" src = "../static/gay.jpg" alt = "picture of rainbow flag"  height="300" width="400">
 <h4>#We can accept each other <3 !</h4> </div>
 
 
