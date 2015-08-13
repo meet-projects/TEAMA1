@@ -24,8 +24,12 @@
 
 <div class="photobox">
 	<img  class= "image" src="{{url_for('static', filename=photo.name)}}">
-	<h4>{{photo.status}}</h4>
-	<button type="button" >Agree</button>
+	<h3>{{photo.status}}</h3>
+	<h4>Agrees:{{photo.agrees}}</h4>
+	<form action="{{url_for('mainpage')}}" method="POST">
+		<input type="hidden" name="photo_id" value="{{photo.id}}">
+		<input type="submit" value="Agree">
+	</form>
 </div>
 
 

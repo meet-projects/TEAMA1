@@ -27,10 +27,18 @@ def gotoregister():
 
 
 
-@app.route('/main')
+@app.route('/main' , methods=['GET', 'POST'])
 def mainpage():	
-		photoslist=session.query(Photos).all()	
+	photoslist=session.query(Photos).all()
+	if request.method == "GET":	
 		return render_template('main_page.html', photos=photoslist)
+	else:
+		photo_id=request.form['photo_id']
+		pic=session.query(Photos).filter_by(id=photo_id).first()
+		pic.agrees+=1
+		session.commit()
+		print pic.agrees
+		return render_template('main_page.html', photos=photoslist)		
 
 
 @app.route('/signin' , methods=['GET', 'POST'])
@@ -69,8 +77,6 @@ def registration():
 		return redirect(url_for("mainpage"))
 		
 		
-
-
 
 
 
