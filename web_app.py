@@ -1,5 +1,7 @@
 from flask import Flask , render_template , request , url_for , redirect
+from flask import session as web_session
 app = Flask(__name__)
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 import datetime
 # SQLAlchemy stuff
@@ -22,15 +24,26 @@ def gotoregister():
     return render_template('register.html')
 
 
-@app.route('/signin')
-def gotosignin():
-    return render_template('signin.html')
+
 
 
 @app.route('/main')
 def mainpage():	
 		photoslist=session.query(Photos).all()	
 		return render_template('main_page.html', photos=photoslist)
+
+
+@app.route('/signin' , methods=['GET', 'POST'])
+def gotosignin():
+	if request.method == "GET":
+
+	  return render_template('signin.html')
+   
+	else:
+		web_session['firstname']= request.form['firstname']
+		web_session['lastname']= request.form['lastname']
+		return redirect(url_for("mainpage"))
+
 
 @app.route('/newuser')
 def sumbit():
